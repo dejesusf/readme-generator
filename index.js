@@ -1,34 +1,33 @@
 // Include packages needed for this application
 const inquirer= require('inquirer');
 const fs= require('fs');
-const generateReadMe= ({title,description,installation,usage,credits,license})=>{
-    return ` # ${title}
+const generateReadMe= ({title,description,installation,usage,credits,github,license})=>{
+    return `# ${title}
 
-    ## Desription
-    ${description}
+## Desription
+${description}
 
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [License](#license)
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-    ## Installation
-    ${installation}
+## Installation
+${installation}
     
-    ## Usage
-    ${usage}
+## Usage
+${usage}
 
-    To add a screenshot, use the relative filepath and add it here using the following syntax:
-    ![alt text](images/screenshot.png)
+To add a screenshot, use the relative filepath and add it here using the following syntax:
+![alt text](images/screenshot.png)
 
-    ## Credits
-    ${credits}
+## Credits
+[${credits}](https://github.com/${github})
 
-    ## License
-    ${license}
-    `
-}
+## License
+${license}
+`}
 
 // Create an array of questions for user input
 inquirer
@@ -56,7 +55,7 @@ inquirer
         {
             type: 'input',
             name: 'github',
-            message: 'If there were collaborators, please list their GitHub profiles. Enter N/A if not applicable.',
+            message: 'If there were collaborators, please list their GitHub usernames. Enter N/A if not applicable.',
         },
         {
             type: 'list',
