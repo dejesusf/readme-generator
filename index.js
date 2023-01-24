@@ -26,7 +26,7 @@ ${installation}
 ## Usage
 ${usage}
 
-To add a screenshot, use the relative filepath and add it here using the following syntax:
+OPTIONAL: To add a screenshot, use the relative filepath and add it here using the following syntax. If not, please delete this portion before finalizing your files.
 ![alt text](images/screenshot.png)
 
 ## Questions
