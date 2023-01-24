@@ -3,6 +3,8 @@
 ## Desription
 For this assignment, we were given the task of generating a markdown file with the use of user inputs straight from the command line. This uses 100% JavaScript with the help of node.js and inquirer. Fun fact, this ReadMe was created by this generator!
 
+![readme generator demonstration](./readme%20generator%20demo.mov)
+
 ## Table of Contents
 - [License](#license)
 - [Installation](#installation)
